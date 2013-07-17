@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+	<name>mod_jblancefeeds</name>
+	<creationDate>08 August, 2012</creationDate>
+	<author>JoomBri Team</author>
+	<copyright>Copyright (C) 2012 - 2013 BriTech Solutions. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@joombri.in</authorEmail>
+	<authorUrl>www.joombri.in</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_JBLANCE_DESC_FEEDS_MODULE</description>
+	
+	<files>
+		<filename module="mod_jblancefeeds">mod_jblancefeeds.php</filename>
+		<filename>css/style.css</filename>
+		<filename>css/index.html</filename>
+		<filename>index.html</filename>
+	    <filename>helper.php</filename>	
+	    <filename>tmpl/default.php</filename>
+	    <filename>tmpl/index.html</filename>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jblancefeeds.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jblancefeeds.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" default="" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="total_row" type="text" default="5" label="MOD_JBLANCE_LABEL_TOTAL_ROW" description="MOD_JBLANCE_DESC_TOTAL_ROW" />
+				<field name="show_type" type="radio" default="feed" label="MOD_JBLANCE_LABEL_SHOW_TYPE" description="MOD_JBLANCE_DESC_SHOW_TYPE">
+					<option value="feed">MOD_JBLANCE_NEWS_FEED</option>
+					<option value="message">MOD_JBLANCE_MESSAGES</option>
+				</field>
+				<field name="show_logo" type="radio" default="1" label="MOD_JBLANCE_LABEL_SHOW_USER_LOGO" description="MOD_JBLANCE_DESC_SHOW_USER_LOGO">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="show_unread" type="radio" default="0" label="MOD_JBLANCE_LABEL_SHOW_UNREAD_ONLY" description="MOD_JBLANCE_DESC_SHOW_UNREAD_ONLY">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

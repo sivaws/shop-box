@@ -1,0 +1,26 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* System White
+----------------------------------------------------------------------------------------------------*/
+
+.system-white pre,
+.system-white .box-content,
+.system-white .box-note {
+	border: 1px solid #eee;
+	background: #f9f9f9;
+}
+
+.system-white hr { border-top-color: #eee; }
+
+.system-white .box-info { border-color: #d2dce1; }
+.system-white .box-warning { border-color: #ffd7cd; }
+.system-white .box-hint { border-color: #fae6be; }
+.system-white .box-download { border-color: #dce6be; }
+
+.system-white ul.zebra > li.odd,
+.system-white table.zebra tbody tr.odd { background: #f9f9f9; }
+
+dl.separator dd,
+dl.separator dt:before,
+dl.separator dt:after,
+form.box fieldset { border-color: #eee; }

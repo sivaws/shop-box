@@ -1,0 +1,83 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/modules.css);
+
+
+/* Module Badges
+----------------------------------------------------------------------------------------------------*/
+
+.module .badge {
+	top: -8px;
+	right: -8px;
+	width: 64px;
+	height: 64px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+ 
+.module .badge-hot { background-position: 0 0; }
+.module .badge-top { background-position: 0 -70px; }
+.module .badge-free { background-position: 0 -140px; }
+.module .badge-new { background-position: 0 -210px; }
+
+
+/* Module Icons
+----------------------------------------------------------------------------------------------------*/
+
+.module .module-title .icon {
+	width: 35px;
+	height: 35px;
+	top: 0;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.module.mod-box-color .module-title .icon { background: url(../images/module_icons_white.png) 0 0 no-repeat; }
+
+.module .module-title .icon-download { background-position: 0 0; }
+.module .module-title .icon-twitter { background-position: 0 -40px; }
+.module .module-title .icon-mail { background-position: 0 -80px; }
+.module .module-title .icon-bubble { background-position: 0 -120px; }
+.module .module-title .icon-login { background-position: 0 -160px; }
+.module .module-title .icon-cart { background-position: 0 -200px; }
+
+
+/* Module Type: Box
+----------------------------------------------------------------------------------------------------*/
+
+.mod-box {
+	padding: 30px;
+	background: #fff;
+}
+
+/* Color */
+.mod-box-color h1,
+.mod-box-color h2,
+.mod-box-color h3,
+.mod-box-color h4,
+.mod-box-color h5,
+.mod-box-color h6 { color: #fff; }
+
+.mod-box-color em,
+.mod-box-color code { color: #fff; }
+
+.mod-box-color,
+.mod-box-color .module-title { color: #fff; }
+
+.mod-box-color .module-title .icon { background-image: url(../images/module_icons_white.png); }
+
+/* Transparent */
+.mod-box-transparent1,
+.mod-box-transparent2 { 
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
+.mod-box-transparent1 { background: url(../images/module_box_transparent1.png) 0 0 repeat; }
+.mod-box-transparent2 { background: url(../images/module_box_transparent2.png) 0 0 repeat; }
+
+
+/* Module Type: Plain
+----------------------------------------------------------------------------------------------------*/
+
+.mod-plain { margin: 10px; }

@@ -1,0 +1,317 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/tools.css);
+
+
+/* Buttons (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+
+.button-primary,
+.button-default,
+form.style button,
+form.style input[type='button'],
+form.style input[type='submit'] {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 6px 12px;
+	border-radius: 3px;
+	box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.1);
+	font-size: 16px;
+}
+
+.button-default,
+form.style button,
+form.style input[type='button'],
+form.style input[type='submit'],
+.mod-box-transparent1 .button-default,
+.mod-box-transparent1 form.style button,
+.mod-box-transparent1 form.style input[type='button'],
+.mod-box-transparent1 form.style input[type='submit'],
+.mod-box-transparent2 .button-default,
+.mod-box-transparent2 form.style button,
+.mod-box-transparent2 form.style input[type='button'],
+.mod-box-transparent2 form.style input[type='submit']{
+	border: none;
+	background: #fff;
+	text-shadow: 0 1px 1px #FFF;
+}
+
+.button-default:active,
+form.style button:active,
+form.style input:active[type='button'],
+form.style input:active[type='submit'] {
+	box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.1), 
+				0px 1px 0px 0px rgba(255,255,255,0.4);
+}
+
+.mod-box-color .button-default:active,
+.mod-box-color form.style button:active,
+.mod-box-color form.style input:active[type='button'],
+.mod-box-color form.style input:active[type='submit'] {
+	box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.1), 
+				0px 1px 0px 0px rgba(255,255,255,0.4);
+}
+
+/* Primary */
+.button-primary { color: #fff; }
+.button-primary:hover { color: #fff; }
+
+.button-primary:active {
+	box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.1), 
+				0px 1px 0px 0px rgba(255,255,255,0.4);
+	color: #fff;
+}
+
+.mod-box-color .button-primary { color: #fff; }
+
+
+/* Images and Objects (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+
+img.border-box { 
+	border-width: 1px; 
+	border-style: solid;
+}
+
+
+/* Lists and Tables (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+
+/* Line */
+ul.line > li { border-top: 1px solid #DDEAEE; }
+ul.line > li:first-child { padding-top: 5px; }
+ul.line > li:last-child {
+	border-bottom: 1px solid #DDEAEE;
+	padding-bottom: 5px;
+}
+
+.mod-plain ul.line > li {
+    padding: 10px 0;
+    border-top: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.mod-plain ul.line > li:last-child { padding-bottom: 10px; }
+
+/* Check */
+ul.check > li {
+	padding: 4px 0 0 30px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.mod-box-color ul.check > li { background-position: 0 -270px; }
+
+/* Zebra List and Table */
+ul.zebra > li.odd,
+table.zebra tbody tr.odd {
+	background: #fff;
+	background: rgba(255,255,255,0.4);
+}
+
+ul.zebra > li:nth-of-type(odd),
+table.zebra tbody tr:nth-of-type(odd) {
+	background: #fff;
+	background: rgba(255,255,255,0.4);
+}
+
+.mod-box ul.zebra > li.odd,
+.mod-box table.zebra tbody tr.odd {
+	background: #eee;
+	background: rgba(38,151,209,0.1);
+}
+
+.mod-box ul.zebra > li:nth-of-type(odd),
+.mod-box table.zebra tbody tr:nth-of-type(odd) {
+	background: #eee;
+	background: rgba(38,151,209,0.1);
+}
+
+
+/* Definition Lists
+----------------------------------------------------------------------------------------------------*/
+
+dl.separator dt {	
+	position: relative;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+
+/* border code because of RTL */
+dl.separator dd {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-width: 0 0 0 1px;
+	border-style: solid;
+	border-color: #FFF;
+}
+
+dl.separator dt:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -15px;
+	width: 30px;
+	border-top: 1px solid #FFF;
+}
+
+dl.separator dt:after {
+	content: "";
+	position:absolute;
+	top: -3px;
+	right: -4px;
+	width: 5px;
+	height: 5px;
+	background: #FFF;
+	border-width: 1px;
+	border-style: solid;
+	border-radius:6px;
+}
+
+dl.separator dt:first-child:before,
+dl.separator dt:first-child:after { display: none; }
+
+
+/* Text
+----------------------------------------------------------------------------------------------------*/
+
+/* Inline Text Box */
+em.box { 
+	border: 1px dotted #FFF;
+	color: #FFF;
+}
+
+/* Dotted Horizontal Rule */
+hr.dotted { background: url(../images/tools/line_dotted.png) 0 0 repeat-x; }
+
+
+/* Boxes
+----------------------------------------------------------------------------------------------------*/
+
+.box-content {
+	background: #FFF;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 3px;
+}
+
+.box-note,
+.box-info,
+.box-warning,
+.box-hint,
+.box-download {
+	background: #FFF;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 3px;
+}
+
+.box-info {
+	background: #ebf5fa url(../images/tools/box_info.png) 0 0 no-repeat;
+	border-color: #d2dce1;
+}
+
+.box-warning {
+	background: #fff0eb url(../images/tools/box_warning.png) 0 0 no-repeat;
+	border-color: #ffd7cd;
+}
+
+.box-hint {
+	background: #fffae6 url(../images/tools/box_hint.png) 0 0 no-repeat;
+	border-color: #fae6be;
+}
+
+.box-download {
+	background: #faffe6 url(../images/tools/box_download.png) 0 0 no-repeat;
+	border-color: #dce6be;
+}
+
+
+/* Forms (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+
+form.box fieldset {
+	border: 1px solid #fff;
+	border-radius: 3px;
+}
+
+form.box legend {
+	border-radius: 3px;
+	color: #fff;
+}
+
+form.style input,
+form.style select,
+form.style textarea {
+	padding: 4px 6px;
+	border: 1px solid #c1cbd3;
+	border-radius: 3px;
+	color: #8699a9;
+	-webkit-transition: all linear 0.2s;
+	transition: all linear 0.2s;
+}
+
+form.style input:focus,
+form.style select:focus,
+form.style textarea:focus {
+	outline: 0;
+	background: #fff;
+}
+
+.mod-box-color form.style input,
+.mod-box-color form.style select,
+.mod-box-color form.style textarea {
+	border: none;
+	background: #fff;
+}
+
+
+/* Social Icons
+----------------------------------------------------------------------------------------------------*/
+
+.social-icons {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.social-icons li { margin: 20px 0; }
+
+.social-icons li a {
+	display: table-cell;
+	height: 27px;
+	padding-left: 50px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	font-size: 18px;
+	line-height: 14px;
+	vertical-align: middle;
+}
+
+.mod-box-color { color: fff; }
+
+.bg-colored .social-icons li a:hover,
+.mod-box-colored .social-icons li a:hover,
+.mod-box-transparent .social-icons li a:hover { opacity: 1; }
+
+.social-icons .twitter a:hover { background-position: 0 -100px; }
+
+.social-icons .facebook a { background-position: 0 -200px; }
+.social-icons .facebook a:hover { background-position: 0 -300px; }
+
+.social-icons .xing a { background-position: 0 -400px; }
+.social-icons .xing a:hover { background-position: 0 -500px; }
+
+.social-icons .rss a { background-position: 0 -600px; }
+.social-icons .rss a:hover { background-position: 0 -700px; }
+
+.social-icons .googleplus a { background-position: 0 -800px; }
+.social-icons .googleplus a:hover { background-position: 0 -900px; }
+
+.social-icons .vimeo a { background-position: 0 -1000px; }
+.social-icons .vimeo a:hover { background-position: 0 -1100px; }
+
+.social-icons .flickr a { background-position: 0 -1200px; }
+.social-icons .flickr a:hover { background-position: 0 -1300px; }

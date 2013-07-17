@@ -1,0 +1,141 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Style Style Sheet - Defines the main look like colors and backgrounds
+ * Not all style related CSS is included, only colors and backgrounds which may change for different theme styles
+ */
+
+
+/* Base
+----------------------------------------------------------------------------------------------------*/
+
+body { color: #777; }
+
+hr { border-top-color: #999; }
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+body { 	background: #B4CDD9; }
+
+@media (min-device-width: 1025px) {
+
+	body {
+		background: url(../../../images/background/gradient.svg) no-repeat fixed, url(../../../images/background/sky/sky-left.png) 0 0 no-repeat fixed, url(../../../images/background/sky/sky-right.png) 0 0 no-repeat fixed, #B4CDD9;
+        background-size: 150% 150%, 500px 900px, 370px 907px;
+        background-position: center top, top left, top right;
+	}
+
+}
+
+
+/* Menus - Mega Drop-Down Menu
+----------------------------------------------------------------------------------------------------*/
+
+/* Level 1 */
+.menu-dropdown a.level1,
+.menu-dropdown span.level1 { color: #777; }
+
+/* Level 2 */
+.menu-dropdown a.level2,
+.menu-dropdown span.level2,
+.menu-dropdown a.level3 { color: #777; }
+
+.menu-dropdown li.level2 { border-top: 1px solid #ccc; }
+
+/* Menu + Module */
+.menu-dropdown .module a { color: #777; }
+
+
+/* Menus - Sidebar/Accordion Menu
+----------------------------------------------------------------------------------------------------*/
+
+/* Link */
+.menu-sidebar a,
+.menu-sidebar li > span { color: #999; }
+
+/* Parents Level 1 */
+.menu-sidebar li.level1 { border-bottom: 1px solid #ccc; }
+
+/* Level 2-4 */
+.menu-sidebar a.level2 { color: #777; }
+
+
+/* Modules
+----------------------------------------------------------------------------------------------------*/
+
+/* Transparent */
+.mod-box-transparent1 { background: url(../images/module_box_transparent1.png) 0 0 repeat; }
+.mod-box-transparent2 { background: url(../images/module_box_transparent2.png) 0 0 repeat; }
+
+
+/* Tools
+----------------------------------------------------------------------------------------------------*/
+
+/* Zebra List and Table */
+ul.line > li,
+ul.line > li:last-child { border-color: #ccc; }
+.mod-plain ul.line > li { border-color: rgba(255,255,255,0.5); }
+
+table.zebra caption { color: #ccc; }
+
+/* Boxes */
+.box-note,
+.box-info,
+.box-warning,
+.box-hint,
+.box-download,
+.box-content { border-color: #ccc; }
+
+/* Forms (Needed for System Markup) */
+form.style input,
+form.style select,
+form.style textarea { color: #777; }
+
+
+/* System
+----------------------------------------------------------------------------------------------------*/
+
+/* Drop-Down Results */
+.searchbox .results li.results-header { color: #777; }
+
+.searchbox.loading button { background-image: url(../images/searchbox_loader.gif); }
+
+/* Breadcrumbs */
+.breadcrumbs {
+    background: #f4f4f4;
+    background: url(../images/module_box_transparent1.png) 0 0 repeat;
+}
+
+/* Author */
+#system .author-box {
+    border-color: #ccc;
+    background: rgba(0,0,0,0.03);
+}
+
+#system .author-box .avatar { border-color: #777; }
+
+/* Comments */
+#system #comments .comment-head,
+#system #comments .comment-byadmin .comment-head,
+.comments-list > article { border-color: #ccc; }
+
+#system #comments .comment-byadmin .comment-head {  background: rgba(0,0,0,0.03); }
+
+
+/* Item
+----------------------------------------------------------------------------------------------------*/
+
+.isblog #system .item,
+.isblog #system > .title,
+.noblog #content {
+    padding: 30px;
+    background: #f4f4f4;
+    background: url(../images/module_box_transparent1.png) 0 0 repeat;
+}
+
+
+/* Widgetkit Gallery
+----------------------------------------------------------------------------------------------------*/
+.wk-gallery-glass li { background: url(../images/module_box_transparent2.png) 0 0 repeat; }

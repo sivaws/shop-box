@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.0" type="plugin" group="joombri" method="upgrade">
+	<name>plg_joombri_jblancefeeds</name>
+	<creationDate>15 July 2012</creationDate>
+	<author>JoomBri Team</author>
+	<copyright>Copyright (C) 2012 - 2013 BriTech Solutions. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@joombri.in</authorEmail>
+	<authorUrl>www.joombri.in</authorUrl>
+	<version>1.0</version>
+	<description>PLG_JOOMBRI_JBLANCEFEEDS_DESC</description>
+	
+	<files>
+		<filename plugin="jblancefeeds">jblancefeeds.php</filename>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_joombri_jblancefeeds.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_joombri_jblancefeeds.sys.ini</language>
+	</languages>
+</extension>

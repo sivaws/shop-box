@@ -1,0 +1,164 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Style Style Sheet - Defines the main look like colors and backgrounds
+ * Not all style related CSS is included, only colors and backgrounds which may change for different theme styles
+ */
+
+
+/* Base
+----------------------------------------------------------------------------------------------------*/
+
+body { color: #fff; }
+
+hr { border-top-color: #fff; }
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+body { 	background: #dd2f44; }
+
+.top-a-line #top-a:before,
+.bottom-b-line #bottom-b:before { border-bottom: solid 1px rgba(255,255,255,0.5); }
+
+
+/* Menus - Mega Drop-Down Menu
+----------------------------------------------------------------------------------------------------*/
+
+/* Level 1 */
+.menu-dropdown a.level1,
+.menu-dropdown span.level1 { color: #fff; }
+
+/* Level 2-3 */
+.menu-dropdown a.level2,
+.menu-dropdown span.level2,
+.menu-dropdown a.level3 { color: #777; }
+
+.menu-dropdown li.level2 { border-top: 1px solid #ccc; }
+
+/* Menu + Module */
+.menu-dropdown .module a { color: #777; }
+
+
+/* Menus - Sidebar/Accordion Menu
+----------------------------------------------------------------------------------------------------*/
+
+/* Link */
+.menu-sidebar a,
+.menu-sidebar li > span { color: #fff; }
+
+/* Parents Level 1 */
+.menu-sidebar li.level1 { border-bottom: 1px solid #fff; }
+
+/* Level 2-4 */
+.menu-sidebar a.level2 { color: #fff; }
+
+
+/* Modules
+----------------------------------------------------------------------------------------------------*/
+
+/* Transparent */
+.mod-box-transparent1 { background: url(../images/module_box_transparent1.png) 0 0 repeat; }
+.mod-box-transparent2 { background: url(../images/module_box_transparent2.png) 0 0 repeat; }
+
+.mod-box,
+.system-white { color: #777; }
+
+.system-white #footer { color: #fff; }
+
+.mod-plain,
+.mod-box-transparent1,
+.mod-box-transparent2 { color: #fff; }
+
+
+/* Tools
+----------------------------------------------------------------------------------------------------*/
+
+ul.line > li,
+ul.line > li:last-child { border-color: #fff; }
+.mod-plain ul.line > li { border-color: rgba(255,255,255,0.5); }
+
+table.zebra caption { color: #fff; }
+
+/* Boxes */
+.box-note,
+.box-info,
+.box-warning,
+.box-hint,
+.box-download,
+.box-content { 
+    border-color: #fff; 
+    color: #777; 
+}
+
+/* Forms (Needed for System Markup) */
+form.style input,
+form.style select,
+form.style textarea { color: #777; }
+
+
+/* System
+----------------------------------------------------------------------------------------------------*/
+
+/* Search Box */
+.searchbox { border-left: 1px solid #fff; }
+
+.searchbox input::-moz-placeholder { 
+    color: #fff;
+    opacity: 1;
+}
+
+.searchbox input:-ms-input-placeholder { color: #fff; }
+.searchbox input::-webkit-input-placeholder { color: #fff; }
+.searchbox input.placeholder { color: #fff; }
+
+/* Drop-Down Results */
+.searchbox .results,
+.searchbox .results li.results-header { color: #777; }
+
+.searchbox.loading button { background-image: url(../images/searchbox_loader.gif); }
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+    background: #f4f4f4;
+    background: url(../images/module_box_transparent1.png) 0 0 repeat;
+}
+
+/* Author */
+#system .author-box {
+    border-color: #fff;
+    background: rgba(0,0,0,0.1);
+}
+
+#system .author-box .avatar { border-color: #fff; }
+
+/* Comments */
+#system #comments .comment-head,
+#system #comments .comment-byadmin .comment-head,
+.comments-list > article { border-color: #fff; }
+
+#system #comments .comment-byadmin .comment-head {  background: rgba(0,0,0,0.1); }
+
+
+/* Item
+----------------------------------------------------------------------------------------------------*/
+
+.isblog #system .item,
+.isblog #system > .title,
+.noblog #content {
+    padding: 30px;
+    background: #f4f4f4;
+    background: url(../images/module_box_transparent1.png) 0 0 repeat;
+}
+
+
+/* Widgetkit
+----------------------------------------------------------------------------------------------------*/
+.wk-gallery-glass li { background: url(../images/module_box_transparent2.png) 0 0 repeat; }
+
+.wk-slideshow,
+.wk-slideshow-showcasebox .wk-slideset .set li,
+.wk-slideshow-showcasebuttons .wk-slideset .set li,
+.wk-slideshow .wk-content { color: #777; }

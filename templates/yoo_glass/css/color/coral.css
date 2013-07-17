@@ -1,0 +1,309 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* Base
+----------------------------------------------------------------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { color: #CA7767; }
+
+a { color: #CA7767; }
+
+#footer a { color: #CA7767; }
+#footer a:hover { color: #9D4637; }
+
+a:hover,
+em, code { color: #9D4637; }
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+.custom-logo { background-image: url(../../../../images/yootheme/logo_coral.png); }
+
+#totop-scroller { background-image: url(../../images/color/coral/totop_scroller.png); }
+
+
+/* Menus - Mega Drop-Down Menu
+----------------------------------------------------------------------------------------------------*/
+
+/* Set Hover and Active */
+.menu-dropdown li.level1:hover .level1,
+.menu-dropdown li.level1.remain .level1 {
+	background: #CA7767;
+	color: #fff;
+}
+
+.menu-dropdown li.active .level1 { color: #CA7767; }
+
+/* Set Hover and Curreent */
+.menu-dropdown a.level2:hover { color: #CA7767; }
+.menu-dropdown a.current.level2 { color: #CA7767; }
+
+/* Level 3 */
+.menu-dropdown a.level3 { background-image: url(../../images/color/coral/menu_dropdown_level3.png); }
+
+/* Set Hover and Curreent */
+.menu-dropdown a.level3:hover { color: #CA7767; }
+.menu-dropdown a.current.level3 { color: #CA7767; }
+
+/* Menu + Module */
+.menu-dropdown .module a:hover { color: #CA7767; }
+
+
+/* Menus - Sidebar/Accordion Menu
+----------------------------------------------------------------------------------------------------*/
+
+/* Set Hover and Curreent */
+.menu-sidebar li a:hover,
+.menu-sidebar li > span:hover,
+.menu-sidebar a.current { color: #CA7767; }
+
+/* Parents Level 1 */
+.menu-sidebar li.parent .level1 > span { background-image: url(../../images/color/coral/menu_sidebar_parent.png); }
+
+/* Level 2-4 */
+.menu-sidebar a.level2 { background-image: url(../../images/color/coral/menu_sidebar_level2.png); }
+
+/* Sidebar/accordion menu on colored module */
+.mod-box-color .menu-sidebar li a:hover,
+.mod-box-color .menu-sidebar li > span:hover,
+.mod-box-color .menu-sidebar a.current { color: #fff; }
+
+.mod-box-color .menu-sidebar a.level2 { background-image: url(../../images/color/coral/menu_sidebar_level2_white.png); }
+
+/* Parents Level 1 */
+.mod-box-color .menu-sidebar li.parent .level1 > span { background-image: url(../../images/color/coral/menu_sidebar_parent_white.png); }
+
+/* Line Menu */
+.menu-line li { background-image: url(../../images/color/coral/menu_line_item.png); }
+
+
+/* Modules
+----------------------------------------------------------------------------------------------------*/
+
+.module .badge { background-image: url(../../images/color/coral/module_badges.png); }
+
+.module .module-title .icon { background-image: url(../../images/color/coral/module_icons.png); }
+
+.mod-box .module-title { color: #CA7767; }
+
+.mod-box-color .module-title { color: #fff; }
+
+.mod-box-color { background: #CA7767; }
+.mod-box-color a { color: #F4DAD5; }
+.mod-box-color a:hover { color: #EBBCB4; }
+
+
+/* Tools
+----------------------------------------------------------------------------------------------------*/
+
+/* Default Button */
+.system-white .button-default,
+.system-white form.style button,
+.system-white form.style input[type='button'],
+.system-white form.style input[type='submit'],
+.mod-box .button-default,
+.mod-box form.style button,
+.mod-box form.style input[type='button'],
+.mod-box form.style input[type='submit'] {
+	background: #fff;
+	background-image: -webkit-radial-gradient(center, #ffffff, #FCF7F5);
+	background-image: radial-gradient(ellipse at center, #ffffff, #FCF7F5);
+	color: #CA7767;
+}
+
+.button-default,
+form.style button,
+form.style input[type='button'],
+form.style input[type='submit'],
+.mod-box-transparent1 .button-default,
+.mod-box-transparent1 form.style button,
+.mod-box-transparent1 form.style input[type='button'],
+.mod-box-transparent1 form.style input[type='submit'],
+.mod-box-transparent2 .button-default,
+.mod-box-transparent2 form.style button,
+.mod-box-transparent2 form.style input[type='button'],
+.mod-box-transparent2 form.style input[type='submit'] { 
+	background: #fff;
+	color: #CA7767;
+}
+
+.button-default:hover,
+form.style button:hover,
+form.style input:hover[type='button'],
+form.style input:hover[type='submit'],
+.mod-box-color .button-default:hover,
+.mod-box-color form.style button:hover,
+.mod-box-color form.style input:hover[type='button'],
+.mod-box-color form.style input:hover[type='submit'] {
+	background: #fff;
+	background-image: -webkit-radial-gradient(center, #ffffff, #FBF3F0);
+	background-image: radial-gradient(ellipse at center, #ffffff, #FBF3F0);
+	color: #CA7767;
+}
+
+.button-default:active,
+form.style button:active,
+form.style input:active[type='button'],
+form.style input:active[type='submit'] {
+	background: #ebebeb;
+	background-image: -webkit-radial-gradient(center, #ffffff, #F5E7E0);
+	background-image: radial-gradient(ellipse at center, #ffffff, #F5E7E0);
+}
+
+.mod-box-color .button-default:active,
+.mod-box-color form.style button:active,
+.mod-box-color form.style input:active[type='button'],
+.mod-box-color form.style input:active[type='submit'] {}
+
+/* Primary Button */
+.button-primary { background: #CA7767; }
+
+.button-primary:hover {
+	background: #58AD92;
+	background-image: -webkit-radial-gradient(center, #CA7767, #CE4D35);
+	background-image: radial-gradient(ellipse at center, #CA7767, #CE4D35);
+}
+
+.button-primary:active {
+	background: #4D9D83;
+	background-image: -webkit-radial-gradient(center, #CA7767, #C1452F);
+	background-image: radial-gradient(ellipse at center, #CA7767, #C1452F);
+}
+
+.mod-box-color .button-primary { background: #D1553F; }
+
+/* Images and Objects (Needed for System Markup) */
+img.border-box { border-color: #CA7767; }
+
+/* Check */
+ul.check > li { background-image: url(../../images/color/coral/tools/list_check.png); }
+
+.mod-box-color ul.zebra > li.odd,
+.mod-box-color table.zebra tbody tr.odd {
+	background: #ddd;
+	background: rgba(0,0,0,0.05);
+}
+
+.mod-box-color ul.zebra > li:nth-of-type(odd),
+.mod-box-color table.zebra tbody tr:nth-of-type(odd) {
+	background: #f4f4f4;
+	background: rgba(255,255,255,0.2);
+}
+
+/* Definition Lists */
+dl.separator dt:after { border-color: #CA7767; }
+
+/* Inline Text Box */
+em.box { background: #CA7767; }
+.mod-box-color em.box { background: #CA7767; }
+
+/* Boxes */
+.box-note,
+.box-info,
+.box-warning,
+.box-hint,
+.box-download,
+.box-content { border-color: #ccc; }
+
+/* Forms (Needed for System Markup) */
+form.box legend { background: #CA7767; }
+
+form.style input:focus,
+form.style select:focus,
+form.style textarea:focus { border-color: #CA7767; }
+
+.mod-box-color form.style input:focus,
+.mod-box-color form.style select:focus,
+.mod-box-color form.style textarea:focus { border-color: #AC3D28; }
+
+.social-icons li a { background-image: url(../../images/color/coral/tools/icons_social.png); }
+.mod-box-color .social-icons li a { background-image: url(../../images/color/coral/tools/icons_social_white.png); }
+
+
+/* System
+----------------------------------------------------------------------------------------------------*/
+
+/* General */
+#system .title a { color: #CA7767; }
+#system small { color: #AC3D28; }
+
+/* Item */
+#system .item > header .meta { color: #AC3D28; }
+#system .item > header .subtitle { color: #AC3D28; }
+
+.system-white #system .item > .links a { background: #FCF7F5; }
+
+#system .item > .links a { color: #CA7767; }
+
+#system .item > .links a:hover {
+	background: #fff;
+	background-image: -webkit-radial-gradient(center, #ffffff, #FBF3F0);
+	background-image: radial-gradient(ellipse at center, #ffffff, #FBF3F0);
+}
+
+#system .item > .links a:active {
+	background: #ddd;
+	background-image: -webkit-radial-gradient(center, #ffffff, #F5E7E0);
+	background-image: radial-gradient(ellipse at center, #ffffff, #F5E7E0);
+	box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.1),
+				0px 1px 0px 0px rgba(255,255,255,0.4);
+}
+
+/* Pagination */
+#system .pagination a {
+	box-shadow: 0 1px rgba(0,0,0,0.1);
+	color: #CA7767;
+}
+
+#system .pagination a:hover {
+	background-image: -webkit-radial-gradient(center, #fff, #ededed);
+	background-image: radial-gradient(ellipse at center, #fff, #ededed);
+	box-shadow: 0 1px rgba(0,0,0,0.1), 
+				inset 0px 1px rgba(255,255,255,0.5);
+	color: #CA7767;
+}
+
+#system .pagination strong,
+#system .pagination a:active {
+	background-image: -webkit-radial-gradient(center, #fff, #ddd);
+	background-image: radial-gradient(ellipse at center, #fff, #ddd);
+	box-shadow: 0 -1px rgba(0,0,0,0.1), 
+				inset 0 -1px rgba(255,255,255,0.6);
+	color: #CA7767;
+}
+
+/* Search Box */
+
+.searchbox input { color: #CA7767; }
+
+.searchbox.filled button {
+	width: 25px;
+	background-image: url(../../images/color/coral/searchbox_reset.png); 
+}
+
+/* Drop-Down Results */
+.searchbox .results li.more-results:hover { color: #CA7767;}
+
+.searchbox .results li.more-results,
+.searchbox .results li.result.selected { color: #CA7767; }
+
+
+/* Custom
+----------------------------------------------------------------------------------------------------*/
+
+#top-b .mod-plain h1.frontpage span { color: #ca7767; }
+#bottom-b .mod-plain .frontpage a:hover { color: #CA7767; }
+
+
+/* Widgetkit Gallery
+----------------------------------------------------------------------------------------------------*/
+
+.wk-gallery-glass li:hover .huhucaption {
+    background: #CA7767;
+    color: #fff;
+}

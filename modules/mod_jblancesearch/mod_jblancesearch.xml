@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+	<name>mod_jblancesearch</name>
+	<creationDate>28 March 2012</creationDate>
+	<author>JoomBri Team</author>
+	<copyright>Copyright (C) 2012 - 2013 BriTech Solutions. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@joombri.in</authorEmail>
+	<authorUrl>www.joombri.in</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_JBLANCE_DESC_SEARCH_MODULE</description>
+	
+	<files>
+		<filename module="mod_jblancesearch">mod_jblancesearch.php</filename>
+		<filename>css/style.css</filename>
+		<filename>css/index.html</filename>
+		<filename>index.html</filename>
+	    <filename>helper.php</filename>	
+	    <filename>tmpl/default.php</filename>
+	    <filename>tmpl/index.html</filename>
+	</files>
+	
+	<languages>
+			<language tag="en-GB">language/en-GB/en-GB.mod_jblancesearch.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.mod_jblancesearch.sys.ini</language>
+	</languages>
+	
+	<config>
+        <fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" default="" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="status" type="radio" default="1" label="MOD_JBLANCE_LABEL_STATUS" description="MOD_JBLANCE_DESC_STATUS">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="category" type="radio" default="1" label="MOD_JBLANCE_LABEL_CATEGORY" description="MOD_JBLANCE_DESC_CATEGORY">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="budget" type="radio" default="1" label="MOD_JBLANCE_LABEL_BUDGET" description="MOD_JBLANCE_DESC_BUDGET">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="set_itemid" type="menuitem" default="101" label="MOD_JBLANCE_LABEL_SET_ITEMID" description="MOD_JBLANCE_LABEL_SET_ITEMID" />
+			</fieldset>
+		</fields>
+    </config>
+</extension>

@@ -1,0 +1,11 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* Mega Drop-Down Menu */
+.menu-dropdown a.level3 { background-image: url(../../images/color/navy/rtl/menu_dropdown_level3.png); }
+
+/* Sidebar/Accordion Menu */
+.menu-sidebar a.level2 { background-image: url(../../images/color/navy/rtl/menu_sidebar_level2.png); }
+.mod-box-color .menu-sidebar a.level2 { background-image: url(../../images/color/navy/rtl/menu_sidebar_level2_white.png); }
+
+/* Module Badges */
+.module .badge { background-image: url(../../images/color/navy/rtl/module_badges.png); }

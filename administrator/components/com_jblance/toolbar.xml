@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toolbar>
+	<items>
+		<item>
+			<name>Dashboard</name>
+			<alias>dashboard-jb</alias>
+			<link><![CDATA[index.php?option=com_jblance&view=user&layout=dashboard]]></link>
+			<type>component</type>
+		</item>
+		<item>
+			<name>Profile</name>
+			<alias>profile-jb</alias>
+			<link><![CDATA[index.php?option=com_jblance&view=user&layout=viewprofile]]></link>
+			<type>component</type>
+			<childs>
+				<item>
+					<name>Edit Profile</name>
+					<alias>edit-profile-jb</alias>
+					<link><![CDATA[index.php?option=com_jblance&view=user&layout=editprofile]]></link>
+				</item>
+				<item>
+					<name>Edit Profile Picture</name>
+					<alias>edit-profile-picture-jb</alias>
+					<link><![CDATA[index.php?option=com_jblance&view=user&layout=editpicture]]></link>
+				</item>
+				<item>
+					<name>Edit Portfolio</name>
+					<alias>edit-portfolio-jb</alias>
+					<link><![CDATA[index.php?option=com_jblance&view=user&layout=editportfolio]]></link>
+				</item>
+				<item>
+					<name>Email Preferences</name>
+					<alias>email-preferences-jb</alias>
+					<link><![CDATA[index.php?option=com_jblance&view=user&layout=notify]]></link>
+				</item>
+				<item>
+					<name>My Messages</name>
+					<alias>my-messages-jb</alias>
+					<link><![CDATA[index.php?option=com_jblance&view=message&layout=inbox]]></link>
+				</item>
+				<item>
+					<name>New Message</name>
+					<alias>new-message-jb</alias>
+					<link><![CDATA[index.php?option=com_jblance&view=message&layout=compose]]></link>
+				</item>
+			</childs>
+		</item>
+		<item>
+			<name>Projects</name>
+			<alias>projects-jb</alias>
+			<link></link>
+			<type>separator</type>
+			<childs>
+				<item>
+					<name>Latest Projects</name>
+					<alias>latest-projects-jb</alias>
+					<link><![CDATA[index.php?option=com_jblance&view=project&layout=listproject]]></link>
+				</item>
+				<item>
+					<name>Search Projects</name>
+					<alias>search-projects-jb</alias>
+					<link><![CDATA[index.php?option=com_jblance&view=project&layout=searchproject]]></link>
+				</item>
+				<item>
+					<name>Post New Project</name>
+					<alias>post-new-project-jb</alias>
+					<link><![CDATA[index.php?option=com_jblance&view=project&layout=editproject]]></link>
+				</item>
+				<item>
+					<name>My Projects</name>
+					<alias>my-projects-jb</alias>
+					<link><![CDATA[index.php?option=com_jblance&view=project&layout=showmyproject]]></link>
+				</item>
+				<item>
+					<name>My Bids</name>
+					<alias>my-bids-jb</alias>
+					<link><![CDATA[index.php?option=com_jblance&view=project&layout=showmybid]]></link>
+				</item>
+			</childs>
+		</item>
+		<item>
+			<name>Finance</name>
+			<alias>finance-jb</alias>
+			<link></link>
+			<type>separator</type>
+			<childs>
+				<item>
+					<name>Buy Subscription</name>
+					<alias>buy-subscription-jb</alias>
+					<link><![CDATA[index.php?option=com_jblance&view=membership&layout=planadd]]></link>
+				</item>
+				<item>
+					<name>Subscription History</name>
+					<alias>subscription-history-jb</alias>
+					<link><![CDATA[index.php?option=com_jblance&view=membership&layout=planhistory]]></link>
+				</item>
+				<item>
+					<name>Deposit Funds</name>
+					<alias>deposit-funds-jb</alias>
+					<link><![CDATA[index.php?option=com_jblance&view=membership&layout=depositfund]]></link>
+				</item>
+				<item>
+					<name>Withdraw Funds</name>
+					<alias>withdraw-funds-jb</alias>
+					<link><![CDATA[index.php?option=com_jblance&view=membership&layout=withdrawfund]]></link>
+				</item>
+				<item>
+					<name>Escrow Payment</name>
+					<alias>escrow-payment-jb</alias>
+					<link><![CDATA[index.php?option=com_jblance&view=membership&layout=escrow]]></link>
+				</item>
+				<item>
+					<name>Manage Payments</name>
+					<alias>manage-payments-jb</alias>
+					<link><![CDATA[index.php?option=com_jblance&view=membership&layout=managepay]]></link>
+				</item>
+				<item>
+					<name>Transaction History</name>
+					<alias>transaction-history-jb</alias>
+					<link><![CDATA[index.php?option=com_jblance&view=membership&layout=transaction]]></link>
+				</item>
+			</childs>
+		</item>
+	</items>
+</toolbar>

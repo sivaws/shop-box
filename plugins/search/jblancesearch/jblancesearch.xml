@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<extension version="1.6.0" type="plugin" group="search" method="upgrade">
+	<name>plg_jblance_search</name>
+	<creationDate>04 September 2012</creationDate>
+	<author>JoomBri Team</author>
+	<copyright>Copyright (C) 2012 - 2013 BriTech Solutions. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@joombri.in</authorEmail>
+	<authorUrl>www.joombri.in</authorUrl>
+	<version>1.0</version>n>
+	<description>PLG_JBLANCE_DESC_SEARCH</description>
+	
+	<files>
+		<filename plugin="jblancesearch">jblancesearch.php</filename>
+	</files>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="search_limit" type="text" size="5" default="50" label="PLG_JBLANCE_LABEL_SEARCH_LIMIT" description="PLG_JBLANCE_DESC_SEARCH_LIMIT"/>
+				<field name="content_limit" type="text" size="5" default="40" label="PLG_JBLANCE_LABEL_CONTENT_LENGTH" description="PLG_JBLANCE_DESC_CONTENT_LENGTH"/>
+			</fieldset>
+		</fields>
+	</config>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_search_jblancesearch.sys.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_search_jblancesearch.ini</language>
+	</languages>
+</extension>

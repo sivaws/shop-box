@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+	<name>com_jblance</name>
+	<author>JoomBri Team</author>
+	<creationDate>15 July, 2013</creationDate>
+	<copyright>Copyright (C) 2012 - 2013 BriTech Solutions. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>support@joombri.in</authorEmail>
+	<authorUrl>www.joombri.in</authorUrl>
+	<version>1.2.0</version>
+		<description>
+	    <![CDATA[
+		<h2>Thank you for installing JoomBri Freelance</h2>
+		<p>What's new in v1.2 ?</p>
+	  	<ul>
+	  		<li>Brand new Look & Feel using Twitter Bootstrap.</li>
+	  		<li>Supports Responsive layouts.</li>
+	  		<li>Withdraw request through MoneyBookers and Bank Transfer.</li>
+	  		<li>Ability to hide contact info from other users.</li>
+	  	</ul>
+		<p><a href="http://www.joombri.in/features" target="_blank">Click here</a> for more features.</p>
+		<p>Please visit <a href="http://docs.joombri.in/doku.php/id,installation;change_log/" target="_blank">Release Notes</a> to read the complete details</p>
+	    ]]>
+	</description>
+	
+	<scriptfile>script.php</scriptfile>
+	
+	<install> <!-- Runs on install -->
+    	<sql>
+        	<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+  		</sql>
+    </install>
+    
+    <uninstall> <!-- Runs on uninstall -->
+    	<sql>
+        	<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+  		</sql>
+	</uninstall>
+	
+	<update> <!-- Runs on update; New in 2.5 -->
+		<schemas>
+			<schemapath type="mysql">sql/updates</schemapath>
+		</schemas>
+	</update>
+
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+		<filename>defines.jblance.php</filename>
+		<filename>jblance.php</filename>
+		<filename>router.php</filename>
+		<folder>controllers</folder>
+		<folder>css</folder>
+		<folder>gateways</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/en-GB.com_jblance.ini
+		</language>
+	</languages>
+	<administration>
+		<menu img="components/com_jblance/images/icons/joombri_m.png">COM_JBLANCE</menu>
+		<submenu>
+			<menu link="option=com_jblance&amp;view=admproject&amp;layout=dashboard" view="admproject" img="components/com_jblance/images/icons/dashboard_m.png">COM_JBLANCE_DASHBOARD</menu>
+			<menu link="option=com_jblance&amp;view=admproject&amp;layout=showproject" view="admproject" img="components/com_jblance/images/icons/project_m.png">COM_JBLANCE_PROJECTS</menu>
+			<menu link="option=com_jblance&amp;view=admproject&amp;layout=showuser" view="admproject" img="components/com_jblance/images/icons/user_m.png">COM_JBLANCE_USERS</menu>
+			<menu link="option=com_jblance&amp;view=admproject&amp;layout=showsubscr" view="admproject" img="components/com_jblance/images/icons/plan_m.png">COM_JBLANCE_SUBSCRIPTIONS</menu>
+			<menu link="option=com_jblance&amp;view=admproject&amp;layout=showdeposit" view="admproject" img="components/com_jblance/images/icons/deposit_m.png">COM_JBLANCE_DEPOSITS</menu>
+			<menu link="option=com_jblance&amp;view=admproject&amp;layout=showwithdraw" view="admproject" img="components/com_jblance/images/icons/withdraw_m.png">COM_JBLANCE_WITHDRAWALS</menu>
+			<menu link="option=com_jblance&amp;view=admproject&amp;layout=showescrow" view="admproject" img="components/com_jblance/images/icons/escrow_m.png">COM_JBLANCE_ESCROWS</menu>
+			<menu link="option=com_jblance&amp;view=admproject&amp;layout=showreporting" view="admproject" img="components/com_jblance/images/icons/reporting_m.png">COM_JBLANCE_REPORTINGS</menu>
+			<menu link="option=com_jblance&amp;view=admconfig&amp;layout=configpanel" view="admconfig" img="components/com_jblance/images/icons/config_m.png">COM_JBLANCE_CONFIGURATION</menu>
+			<menu link="option=com_jblance&amp;view=admproject&amp;layout=showsummary" view="admproject" img="components/com_jblance/images/icons/summary_m.png">COM_JBLANCE_SUMMARY</menu>
+			<menu link="option=com_jblance&amp;view=admproject&amp;layout=about" view="admproject" img="components/com_jblance/images/icons/about_m.png">COM_JBLANCE_ABOUT</menu>
+        </submenu>
+		<files folder="administrator">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>install.jbdefault.php</filename>
+			<filename>jblance.php</filename>
+			<filename>toolbar.xml</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>images</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+		<languages folder="administrator">
+			<language tag="en-GB">language/en-GB/en-GB.com_jblance.ini
+			</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_jblance.sys.ini
+			</language>
+		</languages>
+	</administration>
+	
+	<modules>
+		<module folder="modules" module="mod_jblancebalance" name="mod_jblancebalance" />
+		<module folder="modules" module="mod_jblancecategory" name="mod_jblancecategory" />
+		<module folder="modules" module="mod_jblancefeeds" name="mod_jblancefeeds" />
+		<module folder="modules" module="mod_jblancelatest" name="mod_jblancelatest" />
+		<module folder="modules" module="mod_jblancesearch" name="mod_jblancesearch" />
+		<module folder="modules" module="mod_jblancestats" name="mod_jblancestats" />
+		<module folder="modules" module="mod_jblancetags" name="mod_jblancetags" />
+		<module folder="modules" module="mod_jblanceusers" name="mod_jblanceusers" />
+	</modules>
+	
+	<plugins>
+		<plugin folder="plugins/joombri" plugin="jblancefeeds" name="plg_joombri_jblancefeeds" group="joombri" />
+		<plugin folder="plugins/system" plugin="jblanceredirect" name="plg_jblance_regredirect" group="system" />
+		<plugin folder="plugins/search" plugin="jblancesearch" name="plg_jblance_search" group="search" />
+	</plugins>
+	
+	<!-- updateserver definition -->
+	<updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" priority="1" name="JoomBri Freelance Update Info">http://www.joombri.in/updates/jblance-update.xml</server>
+	</updateservers>
+</extension>

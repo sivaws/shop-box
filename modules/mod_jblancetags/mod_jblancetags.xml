@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.0" type="module" client="site" method="upgrade">
+	<name>mod_jblancetags</name>
+	<creationDate>27 April 2012</creationDate>
+	<author>JoomBri Team</author>
+	<copyright>Copyright (C) 2012 - 2013 BriTech Solutions. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@joombri.in</authorEmail>
+	<authorUrl>www.joombri.in</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_JBLANCE_DESC_TAGS_MODULE</description>
+
+	<files>
+		<filename module="mod_jblancetags">mod_jblancetags.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>swfobject.js</filename>
+		<filename>expressinstall.swf</filename>
+		<filename>tagcloud_eng.swf</filename>
+		<filename>tagcloud_ell.swf</filename>
+		<filename>tagcloud_rus.swf</filename>
+		<filename>tagcloud_por.swf</filename>	
+	</files>
+	
+	<languages>
+  		<language tag="en-GB">language/en-GB/en-GB.mod_jblancetags.ini</language>
+  		<language tag="en-GB">language/en-GB/en-GB.mod_jblancetags.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" default="" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="language" type="list" default="1" label="MOD_JBLANCE_LABEL_LANGUAGE" description="MOD_JBLANCE_DESC_LANGUAGE">
+					<option value="_eng">English/Basic Latin</option>
+					<option value="_ell">Greek/English</option>
+					<option value="_rus">Bulgarian/Russian/Serbian/English - Cyrillic Base</option>
+					<option value="_por">Portuguese/Polish/English - Latin Extended Base</option>			
+				</field>    
+				<field name="swfobject" type="list" default="1" label="MOD_JBLANCE_LABEL_LOAD_SWFOBJECT" description="MOD_JBLANCE_DESC_LOAD_SWFOBJECT">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>    
+				<field name="width" type="text" default="180" label="MOD_JBLANCE_LABEL_WIDTH" description="MOD_JBLANCE_DESC_WIDTH" />
+				<field name="height" type="text" default="180" label="MOD_JBLANCE_LABEL_HEIGHT" description="MOD_JBLANCE_DESC_HEIGHT" />
+				<field name="scale_x" type="text" default="1" label="MOD_JBLANCE_LABEL_SCALE_X" description="MOD_JBLANCE_DESC_SCALE_X" />
+				<field name="scale_y" type="text" default="1" label="MOD_JBLANCE_LABEL_SCALE_Y" description="MOD_JBLANCE_DESC_SCALE_Y" />
+				<field name="speed" type="text" default="60" label="MOD_JBLANCE_LABEL_SPEED" description="MOD_JBLANCE_DESC_SPEED" />
+				<field name="distr" type="list" default="1" label="MOD_JBLANCE_LABEL_DISTRIBUTION" description="MOD_JBLANCE_DESC_DISTRIBUTION">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			  	</field>
+				<field name="trans" type="list" default="1" label="MOD_JBLANCE_LABEL_TRANSPARENT" description="MOD_JBLANCE_DESC_TRANSPARENT">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			  	</field>
+				<field name="target" type="list" default="_self" label="MOD_JBLANCE_LABEL_AR_TARGET" description="MOD_JBLANCE_DESC_AR_TARGET">
+					<option value="_blank">New window</option>
+					<option value="_self">Same window</option>
+			  	</field>
+				<field name="set_itemid" type="menuitem" default="101" label="MOD_JBLANCE_LABEL_SET_ITEMID" description="MOD_JBLANCE_LABEL_SET_ITEMID" />
+			</fieldset>
+			<fieldset name="advanced">
+			<field name="tcolor" type="text" default="333333" label="MOD_JBLANCE_LABEL_TEXT_COLOR_1" description="MOD_JBLANCE_DESC_TEXT_COLOR_1" />
+				<field name="tcolor2" type="text" default="22296F" label="MOD_JBLANCE_LABEL_TEXT_COLOR_2" description="MOD_JBLANCE_DESC_TEXT_COLOR_2" />
+				<field name="tagCount" type="text" size="25" default="25" label="MOD_JBLANCE_LABEL_WORD_TAG_COUNT" description="MOD_JBLANCE_DESC_WORD_TAG_COUNT" />
+				<field name="hicolor" type="text" default="e40009" label="MOD_JBLANCE_LABEL_HIGHLIGHT_COLOR" description="MOD_JBLANCE_DESC_HIGHLIGHT_COLOR" />
+				<field name="bgcolor" type="text" default="FFFFFF" label="MOD_JBLANCE_LABEL_BACKGROUND_COLOR" description="MOD_JBLANCE_DESC_BACKGROUND_COLOR" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

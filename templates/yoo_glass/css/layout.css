@@ -1,0 +1,69 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/layout.css);
+
+
+/* Spacing
+----------------------------------------------------------------------------------------------------*/
+
+.wrapper { padding: 0 10px; }
+
+#header { margin: 25px 10px 25px 10px; }
+
+#toolbar { margin-bottom: 15px; }
+
+#menu,
+#search { margin: 25px 0; }
+
+#content,
+.module { margin: 10px; }
+
+#breadcrumbs,
+#footer { margin: 20px; }
+
+#footer .module { margin: 0; }
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+/* Header */
+#menu { float: right; }
+
+/* Section Border Style */
+.top-a-line #top-a,
+.bottom-b-line #bottom-b {
+	position: relative; 
+	margin-top: 70px; 
+}
+
+.top-a-line #top-a:before,
+.bottom-b-line #bottom-b:before { 
+	content: "";
+	position: absolute;
+	display: block;
+	top: -35px;
+	left: 10px;
+	right: 10px;
+	border-bottom: solid 1px #fff;
+}
+
+/* Footer + Toolbar */
+#footer,
+#toolbar {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+/* ToTop Scroller */
+#totop-scroller {
+	display: block;
+	position: relative;
+	margin: 0 auto 20px;
+	width: 32px;
+	height: 32px;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+}
+
+#totop-scroller:hover { background-position: 50% -50px; }

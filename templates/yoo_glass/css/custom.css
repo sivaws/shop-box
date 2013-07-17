@@ -1,0 +1,56 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Custom Style Sheet - Use this file to style your content
+ */
+ /*
+ * Custom Style Sheet - Use this file to style your content
+ */
+ 
+.custom-logo {
+	display: inline-block;
+	width: 205px;
+	height: 90px;
+	background: url(../../../images/yootheme/logo.png) 50% 50% no-repeat;
+	background-size: contain;
+}
+
+/* Only Phones (Portrait) */
+@media (max-width: 479px) {
+
+	.custom-logo { height: 60px; }
+	
+}
+
+#top-b .mod-plain h1.frontpage {
+    margin-bottom: 30px;
+    font-size: 45px;
+    line-height: 55px;
+}
+
+#bottom-b .mod-plain .frontpage { margin: 30px 10px 30px 0; }
+
+#top-b .mod-plain h1.frontpage,
+#bottom-b .mod-plain .frontpage a { color: #8699a9; }
+
+.frontpage-padding-top { padding-top: 50px; }
+.frontpage-padding-bottom { padding-bottom: 50px; }
+
+
+ /* Frontpage Responsive
+ ----------------------------------------------------------------------------------------------------*/
+
+/* Only Phones and Tablets (Portrait) */
+@media (max-width: 959px) {
+
+	.frontpage-padding-top { padding-top: 10px; }
+	.frontpage-padding-bottom { padding-bottom: 0px; }
+
+}
+
+/* Only Phones */
+@media (max-width: 767px) {
+
+	.frontpage-icons img { width: 70px; }
+
+}

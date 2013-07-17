@@ -1,0 +1,50 @@
+
+
+/* filter styling */
+.filterWrapper { 
+	position:relative;
+	font-size:1.0em;
+	margin:0px 0px 2px 0px;
+	padding:0px;
+	height:20px;
+	z-index:100;
+	}
+.filterWrapper .search		{ 
+	z-index: 100;
+	background: 4px 4px url(../images/preview.png) white no-repeat; 
+	padding-left:25px;
+	margin:0;
+	width: 180px;
+	border:1px solid #006699;
+	float:left;
+	border-radius: 4px;
+	height: 20px;
+	}
+.filterWrapper .refresh {
+	float:left;
+	margin-left:2px;
+	//margin-top:2px;
+	background: url(../images/s0.png) no-repeat;
+	width: 16px;
+	}
+.filterWrapper ul{ 
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	position:absolute;
+	top:20px;
+	left:0px;
+	border:1px solid #006699;
+	background-color:#FFF;
+	overflow-x:hidden;
+	overflow-y:auto;
+	}
+.filterWrapper li{ 
+	padding:1px 1px 1px 20px; 
+	background-color:#FFF; 
+	display:block; 
+	}
+.filterWrapper li.checked	{ 
+	background: #DDD url(../images/s1.png) no-repeat;
+	color:#000;
+	}

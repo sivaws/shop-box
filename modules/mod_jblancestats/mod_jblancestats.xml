@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+	<name>mod_jblancestats</name>
+	<creationDate>25 June 2012</creationDate>
+	<author>JoomBri Team</author>
+	<copyright>Copyright (C) 2012 - 2013 BriTech Solutions. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@joombri.in</authorEmail>
+	<authorUrl>www.joombri.in</authorUrl>
+	<version>1.1</version>n>
+	<description>MOD_JBLANCE_DESC_STATS_MODULE</description>
+	
+	<files>
+		<filename module="mod_jblancestats">mod_jblancestats.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jblancestats.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jblancestats.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" default="" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="total_projects" type="radio" default="1" label="MOD_JBLANCE_LABEL_TOTAL_PROJECTS" description="MOD_JBLANCE_DESC_TOTAL_PROJECTS">
+					<option value="1">JSHOW</option>
+					<option value="0">JHIDE</option>
+				</field>
+				<field name="active_projects" type="radio" default="1" label="MOD_JBLANCE_LABEL_TOTAL_OPEN_PROJECTS" description="MOD_JBLANCE_DESC_TOTAL_OPEN_PROJECTS">
+					<option value="1">JSHOW</option>
+					<option value="0">JHIDE</option>
+				</field>
+				<field name="total_users" type="radio" default="1" label="MOD_JBLANCE_LABEL_TOTAL_USERS" description="MOD_JBLANCE_DESC_TOTAL_USERS">
+					<option value="1">JSHOW</option>
+					<option value="0">JHIDE</option>
+				</field>
+			</fieldset>
+		</fields>
+    </config>
+</extension>

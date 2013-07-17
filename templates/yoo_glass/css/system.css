@@ -1,0 +1,24 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/system.css);
+@import url(../warp/systems/joomla/css/system.css);
+@import url(system-all.css);
+
+
+/* Items (Addition)
+----------------------------------------------------------------------------------------------------*/
+ 
+#system .items .leading .item {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+
+/* Item List
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Search
+----------------------------------------------------------------------------------------------------*/
+
+#system span.highlight { background-color: #ffffaa; }

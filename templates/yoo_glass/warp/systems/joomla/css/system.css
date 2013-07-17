@@ -1,0 +1,107 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+/*
+ * Additional System Stylesheet for Joomla 3.0
+ */
+
+
+/* Item (Addition)
+----------------------------------------------------------------------------------------------------*/
+ 
+#system .item > header .icon { 
+	margin: 2px 0 0 5px;
+	float: right;
+}
+
+
+#system .item > .edit { margin-top: 15px; }
+
+
+/* Item List
+----------------------------------------------------------------------------------------------------*/
+
+#system .item-list {
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+/* Filter
+----------------------------------------------------------------------------------------------------*/
+
+#system .filter {
+	margin: 0 0 10px 0;
+	overflow: hidden;
+}
+
+#system .filter > div {
+	margin: 0 10px 0 0;
+	float: left;
+}
+
+
+/* Form Submission
+----------------------------------------------------------------------------------------------------*/
+
+#system form.submission fieldset > div:before,
+#system form.submission fieldset > div:after { 
+	content: " ";
+	display: block;
+}
+#system form.submission fieldset > div:after { clear: both; }
+#system form.submission fieldset > div > * { vertical-align: middle; }
+#system form.submission fieldset > div > label:first-child {
+	display: block;
+	width: 150px;
+	float: left;
+}
+
+#system form.submission fieldset > div > input[type='text'],
+#system form.submission fieldset > div > input[type='password'] {
+	padding: 5px;
+	width: 250px;
+}
+#system form.submission fieldset > div > select {
+	padding: 5px;
+	width: 262px;
+}
+
+#system form.submission fieldset > div > textarea { width: 255px; }
+
+#system form.submission div.submit {
+	margin-top: -20px;
+	text-align: center;
+}
+
+/* Validation */
+#system .invalid { border-color: #ff0000; }
+#system label.invalid { color: #ff0000; }
+
+/* Small (Login) */
+#system form.submission.small fieldset > div { margin: 15px 0; }
+
+
+
+/* Tooltip
+----------------------------------------------------------------------------------------------------*/
+
+.tip-wrap {
+	display: none;
+	float: left;
+	background: #ffc;
+	border: 1px solid #D4D5AA;
+	padding: 5px;
+	max-width: 200px;
+	color: #323232;
+	font-size: 12px;
+}
+
+.tip-title {
+	margin-top: -15px;
+	padding: 15px 0 5px 0;
+	background: url(../../../../../system/images/selector-arrow.png) no-repeat;
+	font-weight: bold;
+	font-size: 13px;
+	
+}

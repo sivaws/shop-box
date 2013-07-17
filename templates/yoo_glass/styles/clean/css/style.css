@@ -1,0 +1,155 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Style Style Sheet - Defines the main look like colors and backgrounds
+ * Not all style related CSS is included, only colors and backgrounds which may change for different theme styles
+ */
+
+
+/* Base
+----------------------------------------------------------------------------------------------------*/
+
+body { color: #888; }
+
+hr { border-top-color: #ccc; }
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+body { 	background: #eee; }
+
+@media (min-device-width: 1025px) {
+
+	body { background: #eee; }
+
+}
+
+
+/* Menus - Mega Drop-Down Menu
+----------------------------------------------------------------------------------------------------*/
+
+/* Level 1 */
+.menu-dropdown a.level1,
+.menu-dropdown span.level1 { color: #888; }
+
+/* Level 2-3 */
+.menu-dropdown a.level2,
+.menu-dropdown span.level2,
+.menu-dropdown a.level3 { color: #888; }
+
+.menu-dropdown li.level2 { border-top: 1px solid #ccc; }
+
+/* Menu + Module */
+.menu-dropdown .module a { color: #888; }
+
+
+/* Menus - Sidebar/Accordion Menu
+----------------------------------------------------------------------------------------------------*/
+
+/* Link */
+.menu-sidebar a,
+.menu-sidebar li > span,
+.menu-sidebar a.level2 { color: #888; }
+
+/* Parents Level 1 */
+.menu-sidebar li.level1 { border-bottom: 1px solid #ccc; }
+
+
+/* Modules
+----------------------------------------------------------------------------------------------------*/
+
+/* Transparent */
+.mod-box-transparent1 { background: url(../images/module_box_transparent1.png) 0 0 repeat; }
+.mod-box-transparent2 { background: url(../images/module_box_transparent2.png) 0 0 repeat; }
+
+.system-white #footer { color: #888; }
+
+
+/* Tools
+----------------------------------------------------------------------------------------------------*/
+
+/* Zebra List and Table */
+ul.line > li,
+ul.line > li:last-child,
+.mod-plain ul.line > li { border-color: #ccc; }
+
+table.zebra caption { color: #ccc; }
+
+.mod-box ul.zebra > li:nth-of-type(odd),
+.mod-box table.zebra tbody tr:nth-of-type(odd) {
+    background: #ddd;
+    background: rgba(0,0,0,0.05);
+}
+
+/* Boxes */
+.box-note,
+.box-info,
+.box-warning,
+.box-hint,
+.box-download,
+.box-content { border-color: #ccc; }
+
+/* Forms (Needed for System Markup) */
+form.style input,
+form.style select,
+form.style textarea { color: #888; }
+
+
+/* System
+----------------------------------------------------------------------------------------------------*/
+
+/* Search Box */
+.searchbox { border-left: 1px solid #ccc; }
+
+.searchbox input::-moz-placeholder { 
+    color: #ccc;
+    opacity: 1;
+}
+
+.searchbox input:-ms-input-placeholder { color: #ccc; }
+.searchbox input::-webkit-input-placeholder { color: #ccc; }
+.searchbox input.placeholder { color: #ccc; }
+
+/* Drop-Down Results */
+.searchbox .results li.results-header { color: #888; }
+
+.searchbox.loading button { background-image: url(../images/searchbox_loader.gif); }
+
+/* Breadcrumbs */
+.breadcrumbs {
+    background: #f4f4f4;
+    background: url(../images/module_box_transparent1.png) 0 0 repeat;
+}
+
+/* Author */
+#system .author-box {
+    border-color: #ccc;
+    background: rgba(0,0,0,0.03);
+}
+
+#system .author-box .avatar { border-color: #888; }
+
+/* Comments */
+#system #comments .comment-head,
+#system #comments .comment-byadmin .comment-head,
+.comments-list > article { border-color: #ccc; }
+
+#system #comments .comment-byadmin .comment-head {  background: rgba(0,0,0,0.03); }
+
+
+/* Item
+----------------------------------------------------------------------------------------------------*/
+
+.isblog #system .item,
+.isblog #system > .title,
+.noblog #content {
+    padding: 30px;
+    background: #f4f4f4;
+    background: url(../images/module_box_transparent1.png) 0 0 repeat;
+}
+
+
+/* Widgetkit Gallery
+----------------------------------------------------------------------------------------------------*/
+.wk-gallery-glass li { background: url(../images/module_box_transparent2.png) 0 0 repeat; }

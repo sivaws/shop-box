@@ -1,0 +1,81 @@
+a.jbj_regbutton {
+	background: url(../images/themes/header.png) #7B7B7B repeat 0 -180px;
+	height: 28px;
+	display: block;
+	width: 170px;
+	color: #ffffff;
+	font-size: 120%;
+	font-weight: 400;
+	text-decoration: none;
+	line-height: 28px;
+	border: 1px solid #7B7B7B;
+	text-align: center;
+}
+
+a.jbj_regbutton:hover {
+	background: url(../images/themes/header.png) repeat 0 -60px;
+	height: 28px;
+	color: #ffffff;
+	text-decoration: none;
+	height: 28px;
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: #7B7B7B 0px 1px 0px;
+}
+.jbl_h3title {
+	font-size: 18px;
+	border-bottom: solid #7B7B7B 2px;
+	margin: 10px 0;
+	padding: 0 0 3px 0;
+	display: block;
+}
+/* Table CSS */
+.jbl_rowhead th {
+	background: #FFF url(../images/themes/th_bck.gif) repeat-x;
+	color: #666;
+	padding: 5px 10px;
+	border-left: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+}
+
+.jbl_row0 td {
+	border-left: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	/*text-align: left;*/
+	padding: 3px 10px;
+}
+
+.jbl_row1 td {
+	border-left: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	/*text-align: left;*/
+	padding: 3px 10px;
+}
+
+.jbl_row3 {
+	padding: 5px 10px;
+	background: #FFF url(../images/themes/tr_bck.gif) repeat;
+	border-bottom: 3px solid #ccc;
+}
+table tbody tr.jbl_row0:hover td,table tbody tr.jbl_row1:hover td {
+	background: #FFF url(../images/themes/tr_bck.gif) repeat;
+}
+
+
+/*FB Light*/
+.lightface .lightfaceContent .lightfaceTitle {
+	font-size: 14px;
+	color: #fff;
+	background-color: #9D9D9D;
+	border: 1px solid #7B7B7B;
+	font-weight: bold;
+	margin: -1px;
+	margin-bottom: 0;
+	padding: 5px 10px;
+}
+.lightface .lightfaceFooter label.lightfaceblue {
+	border-color: #7B7B7B #7B7B7B #7B7B7B;
+	background-position:0 -438px;
+}
+.lightface .lightfaceFooter label.lightfaceblue.lightfacefocusblue { background-color: #7B7B7B; background-image:none; }
+/* FB Light End*/

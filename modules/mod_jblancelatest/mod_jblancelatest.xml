@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+	<name>mod_jblancelatest</name>
+	<creationDate>29 March 2012</creationDate>
+	<author>JoomBri Team</author>
+	<copyright>Copyright (C) 2012 - 2013 BriTech Solutions. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@joombri.in</authorEmail>
+	<authorUrl>www.joombri.in</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_JBLANCE_DESC_LATEST_MODULE</description>
+	
+	<files>
+		<filename module="mod_jblancelatest">mod_jblancelatest.php</filename>
+		<filename>css/style.css</filename>
+		<filename>css/index.html</filename>
+		<filename>index.html</filename>
+	    <filename>helper.php</filename>	
+	    <filename>tmpl/default.php</filename>
+	    <filename>tmpl/index.html</filename>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jblancelatest.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jblancelatest.sys.ini</language>
+	</languages>
+	
+	<config>
+        <fields name="params">
+			<fieldset name="basic">
+                <field name="moduleclass_sfx" type="text" default="" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="total_row" type="text" default="5" label="MOD_JBLANCE_LABEL_TOTAL_ROW" description="MOD_JBLANCE_DESC_TOTAL_ROW" />
+				<field name="limit_project_title" type="text" default="50" label="MOD_JBLANCE_LABEL_LIMIT_PROJECT_TITLE" description="MOD_JBLANCE_DESC_LIMIT_PROJECT_TITLE" />
+
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="show_categ" type="radio" default="0" label="MOD_JBLANCE_LABEL_SHOW_SKILL" description="MOD_JBLANCE_DESC_SHOW_SKILL">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="show_bid" type="radio" default="1" label="MOD_JBLANCE_LABEL_SHOW_BID" description="MOD_JBLANCE_DESC_SHOW_BID">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="show_avgbid" type="radio" default="1" label="MOD_JBLANCE_LABEL_SHOW_AVG_BID" description="MOD_JBLANCE_DESC_SHOW_AVG_BID">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="show_startdate" type="radio" default="1" label="MOD_JBLANCE_LABEL_SHOW_STARTDATE" description="MOD_JBLANCE_DESC_SHOW_STARTDATE">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="show_enddate" type="radio" default="1" label="MOD_JBLANCE_LABEL_SHOW_ENDDATE" description="MOD_JBLANCE_DESC_SHOW_ENDDATE">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="show_budget" type="radio" default="1" label="MOD_JBLANCE_LABEL_SHOW_BUDGET" description="MOD_JBLANCE_DESC_SHOW_BUDGET">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="show_publisher" type="radio" default="1" label="MOD_JBLANCE_LABEL_SHOW_PUBLISHER" description="MOD_JBLANCE_DESC_SHOW_PUBLISHER">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="set_itemid" type="menuitem" default="101" label="MOD_JBLANCE_LABEL_SET_ITEMID" description="MOD_JBLANCE_LABEL_SET_ITEMID" />
+			</fieldset>
+		</fields>
+    </config>
+</extension>

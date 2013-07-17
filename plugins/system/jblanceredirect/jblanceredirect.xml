@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<extension version="1.6.0" type="plugin" group="system" method="upgrade">
+	<name>plg_jblance_regredirect</name>
+	<creationDate>18 June 2012</creationDate>
+	<author>JoomBri Team</author>
+	<copyright>Copyright (C) 2012 - 2013 BriTech Solutions. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@joombri.in</authorEmail>
+	<authorUrl>www.joombri.in</authorUrl>
+	<version>1.1</version>n>
+	<description>PLG_JBLANCE_DESC_REGREDIRECT</description>
+	
+	<files>
+		<filename plugin="jblanceredirect">jblanceredirect.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="redirect_to" type="list" default="1" label="PLG_JBLANCE_LABEL_REDIRECT_REGISTRATION_TO" description="PLG_JBLANCE_DESC_REDIRECT_REGISTRATION_TO">
+					<option value="1">PLG_JBLANCE_REDIRECT_JOOMBRI</option>
+					<option value="2">PLG_JBLANCE_REDIRECT_JOMSOCIAL</option>
+					<option value="3">PLG_JBLANCE_REDIRECT_COMMUNITY_BUILDER</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_jblanceredirect.sys.ini</language>
+	</languages>
+</extension>
